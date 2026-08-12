@@ -1,10 +1,13 @@
 import QtQuick
 
-Text {
-    text: "HOLA"
+Rectangle {
+    width: 100
+    height: 30
+    color: "red"
 
-    font.pixelSize: 15
-    font.bold: true
-
-    color: "#CDD6F4"
+    Text {
+        anchors.centerIn: parent
+        text: "HOLA"
+        color: "white"
+    }
 }
