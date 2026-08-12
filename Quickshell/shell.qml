@@ -1,4 +1,4 @@
-Import Quickshell //importa funciones basicas
+import Quickshell //importa funciones basicas
 
 ShellRoot{ //raiz de la config
     PanelWindow{ //ventana especifica para el escritorio
