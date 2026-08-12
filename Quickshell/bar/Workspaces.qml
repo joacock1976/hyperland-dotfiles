@@ -5,7 +5,7 @@ Row {
     spacing: 6
 
     Repeater {
-        model: 5
+        model: Hyprland.workspaces
 
         Rectangle {
             required property var modelData
@@ -14,24 +14,17 @@ Row {
             height: 24
             radius: 6
 
-            color: {
-                if (modelData.active)
-                    return "#CDD6F4"
-
-                return "#313244"
-            }
+            color: modelData.active ? "#CDD6F4" : "#313244"
 
             Text {
                 anchors.centerIn: parent
 
-                text: modelData.name
+                text: modelData.id.toString()
 
                 font.pixelSize: 14
                 font.bold: modelData.active
 
-                color: modelData.active
-                    ? "#1E1E2E"
-                    : "#A6ADC8"
+                color: modelData.active ? "#1E1E2E" : "#A6ADC8"
             }
 
             MouseArea {
