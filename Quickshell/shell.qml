@@ -13,11 +13,7 @@ ShellRoot {
         color: "#1e1e2e"
 
         Workspaces {
-            anchors {
-                left: true
-                leftMargin: 12
-                verticalCenter: parent.verticalCenter
-            }
+
         }
 
         Clock {
