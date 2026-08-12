@@ -1,5 +1,4 @@
 Import Quickshell //importa funciones basicas
-import Quickshell.wayland // importa componentes de wayland
 
 ShellRoot{ //raiz de la config
     PanelWindow{ //ventana especifica para el escritorio
