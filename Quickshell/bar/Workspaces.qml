@@ -5,7 +5,7 @@ Row {
     spacing: 6
 
     Repeater {
-        model: Hyprland.workspaces
+        model: 5
 
         Rectangle {
             required property var modelData
