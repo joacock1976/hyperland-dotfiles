@@ -12,3 +12,6 @@
 --   hl.exec_cmd("nm-applet")
 --   hl.exec_cmd("waybar & hyprpaper & firefox")
 -- end)
+
+
+exec-once = quickshell -c hyperland-dotfiles/Quickshell
