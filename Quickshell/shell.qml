@@ -1,23 +1,30 @@
-import Quickshell
+import Quickshell //importa funciones basicas
 import qs.bar
+import QtQuick
+import "bar"
 
-ShellRoot {
-    PanelWindow {
-        anchors {
+ShellRoot{ //raiz de la config
+    PanelWindow{ //ventana especifica para el escritorio
+        anchors{
             top: true
             left: true
             right: true
         }
+    implicitHeight: 32
 
-        implicitHeight: 32
+    color: "#1e1e2e"
 
-        color: "#1E1E2E"
-
-        Clock {
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                verticalCenter: parent.verticalCenter
+    Workspaces{
+        anchors{
+            left: true
+            leftMargin: 12
+            verticalCenter: parent.verticalCenter
             }
         }
+    Clock {
+        anchors.centerIn: parent
+        }
+
     }
 }
+
