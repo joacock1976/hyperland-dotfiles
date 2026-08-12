@@ -1,5 +1,5 @@
 import Quickshell
-import qs.bar
+import Quickshell.Wayland
 
 ShellRoot {
     PanelWindow {
@@ -9,22 +9,16 @@ ShellRoot {
             right: true
         }
 
-        implicitHeight: 32
-        color: "#1e1e2e"
+        implicitHeight: 50
 
-        Workspaces {
-            anchors {
-                left: true
-                leftMargin: 12
-                verticalCenter: parent.verticalCenter
-            }
-        }
+        color: "red"
 
-        Clock {
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                verticalCenter: parent.verticalCenter
-            }
+        Text {
+            text: "HOLA"
+            color: "white"
+            font.pixelSize: 24
+
+            anchors.centerIn: parent
         }
     }
 }
