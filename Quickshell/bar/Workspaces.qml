@@ -1,4 +1,4 @@
-import QTQuick
+import QtQuick
 import Quickshell.Hyprland
 
 Row{
