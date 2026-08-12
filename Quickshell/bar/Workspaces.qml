@@ -2,24 +2,36 @@ import QtQuick
 import Quickshell.Hyprland
 
 Row {
-    spacing: 8
+    spacing: 6
 
     Repeater {
         model: Hyprland.workspaces
 
-        Text {
+        Rectangle {
             required property var modelData
 
-            text: modelData.name
-
-            font.pixelSize: 16
-            font.bold: modelData.active
+            width: 32
+            height: 24
+            radius: 6
 
             color: {
                 if (modelData.active)
                     return "#CDD6F4"
 
-                return "#6C7086"
+                return "#313244"
+            }
+
+            Text {
+                anchors.centerIn: parent
+
+                text: modelData.name
+
+                font.pixelSize: 14
+                font.bold: modelData.active
+
+                color: modelData.active
+                    ? "#1E1E2E"
+                    : "#A6ADC8"
             }
 
             MouseArea {
@@ -28,13 +40,14 @@ Row {
                 hoverEnabled: true
 
                 onEntered: {
-                    parent.color = "#BAC2DE"
+                    if (!modelData.active)
+                        parent.color = "#45475A"
                 }
 
                 onExited: {
                     parent.color = modelData.active
                         ? "#CDD6F4"
-                        : "#6C7086"
+                        : "#313244"
                 }
 
                 onClicked: {
