@@ -19,6 +19,13 @@ ShellRoot{ //raiz de la config
             verticalCenter: parent.verticalCenter
             }
         }
+    Clock {
+        anchors {
+            horizontalCenter: parent.horizontalCenter
+            verticalCenter: parent.verticalCenter
+            }
+        }
+
     }
 }
 
