@@ -1,26 +1,19 @@
 import Quickshell
-import qs.bar
+import "." as Local
 
 ShellRoot {
-    PanelWindow {
-        anchors {
-            top: true
-            left: true
-            right: true
-        }
-
-        implicitHeight: 32
-        color: "#1e1e2e"
-
-        Workspaces {
-
-        }
-
-        Clock {
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                verticalCenter: parent.verticalCenter
-            }
-        }
-    }
+    Local.Bar {}
+    Local.BarMorph {}
+    Local.WallpaperSelector {}
+    Local.ClipboardHistory {}
+    Local.AppLauncher {}
+    Local.ModeSwitcher {}
+    Local.ColorSchemeSwitcher {}
+    Local.PaletteEditor {}
+    Local.BigClock {}
+    Local.AudioVisualizer {}
+    Local.Dock {}
+    Local.SystemMonitor {}
+    Local.HoloRings {}
+    Local.NotificationCenter {}
 }
