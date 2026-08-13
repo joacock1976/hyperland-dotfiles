@@ -258,7 +258,7 @@ Variants {
                                 Text {
                                     anchors.centerIn: parent
                                     text: modelData.glyph
-                                    font.family: "Symbols Nerd Font"
+                                    font.family: "Cascadia Code NF"
                                     font.pixelSize: 13
                                     color: Local.Colors.foreground
                                 }

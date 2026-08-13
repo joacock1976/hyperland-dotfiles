@@ -509,7 +509,7 @@ Item {
                                 Text {
                                     anchors.horizontalCenter: parent.horizontalCenter
                                     text: modelData.glyph
-                                    font.family: "Symbols Nerd Font"
+                                    font.family: "Cascadia Code NF"
                                     font.pixelSize: 18
                                     color: Local.Colors.foreground
                                 }
@@ -567,7 +567,7 @@ Item {
 
                         Text {
                             text: (volCol.ready && volCol.sink.audio.muted) ? "\uf026" : "\uf028"
-                            font.family: "Symbols Nerd Font"
+                            font.family: "Cascadia Code NF"
                             font.pixelSize: 16
                             color: Local.Colors.foreground
 
@@ -768,7 +768,7 @@ Item {
                         Text {
                             anchors.horizontalCenter: parent.horizontalCenter
                             text: "\uf013"
-                            font.family: "Symbols Nerd Font"
+                            font.family: "Cascadia Code NF"
                             font.pixelSize: 18
                             color: Local.Colors.muted
                         }
