@@ -1,7 +1,7 @@
 import QtQuick
 import Quickshell
 import Quickshell.Io
-import ".." as Local
+import "../Core" as Local
 
 // Thin IPC entry point — the actual clipboard UI lives inside
 // BarMorph.qml. Exists so `qs -c vantage ipc call clipboardHistory

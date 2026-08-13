@@ -1,19 +1,19 @@
 import Quickshell
-import "." as Local
+import "./Widgets" as Widgets
 
 ShellRoot {
-    Local.Bar {}
-    Local.BarMorph {}
-    Local.WallpaperSelector {}
-    Local.ClipboardHistory {}
-    Local.AppLauncher {}
-    Local.ModeSwitcher {}
-    Local.ColorSchemeSwitcher {}
-    Local.PaletteEditor {}
-    Local.BigClock {}
-    Local.AudioVisualizer {}
-    Local.Dock {}
-    Local.SystemMonitor {}
-    Local.HoloRings {}
-    Local.NotificationCenter {}
+    Widgets.Bar {}
+    Widgets.BarMorph {}
+    Widgets.WallpaperSelector {}
+    Widgets.ClipboardHistory {}
+    Widgets.AppLauncher {}
+    Widgets.ModeSwitcher {}
+    Widgets.ColorSchemeSwitcher {}
+    Widgets.PaletteEditor {}
+    Widgets.BigClock {}
+    Widgets.AudioVisualizer {}
+    Widgets.Dock {}
+    Widgets.SystemMonitor {}
+    Widgets.HoloRings {}
+    Widgets.NotificationCenter {}
 }
